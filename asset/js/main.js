@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
     $(".burger").click(function(){
-        $(".overlay").toggleClass("show");
-        $($(this).children("i.fa")).toggleClass("fa-bars fa-times")
+        $(".overlay").addClass("show");
+    });
+    $(".close-bt").click(function(){
+        $(".overlay").removeClass("show");
     });
 
     function scrollToSection(event) {

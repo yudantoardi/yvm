@@ -235,20 +235,22 @@ a.logo img{
 
 .owl-carousel .owl-prev,
 .owl-carousel .owl-next{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    top: calc(50% - 20px);
+    top: calc(50% - 30px);
     overflow: hidden;
     text-indent: -200px;
 }
 .owl-carousel .owl-prev{
     background: url(../images/arrow-left.png) no-repeat center;
     left: 20px;
+    background-size: contain;
 }
 .owl-carousel .owl-next{
     background: url(../images/arrow-right.png) no-repeat center;
     right: 20px;
+    background-size: contain;
 }
 .destination-slider .owl-prev,
 .destination-slider .owl-next{
@@ -267,7 +269,30 @@ a.logo img{
     background: #FFB52E;
 }
 .roadshow-slider .item{
-    padding-right: 20px;
+    padding-right: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+.roadshow-slider .item::before,
+.roadshow-slider .item::after{
+    content: "";
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    background: #333;
+}
+.roadshow-slider .item::before{
+    left: 0;
+    background: linear-gradient(-90deg, rgba(233,68,197,0) 0%, rgba(233,68,197,0.7) 100%);
+}
+.roadshow-slider .item::after{
+    right: 0;
+    background: linear-gradient(90deg, rgba(233,68,197,0) 0%, rgba(233,68,197,0.7) 100%);
 }
 .roadshow-slider{
     width: 100%;
@@ -346,7 +371,7 @@ a.logo img{
 #community,
 #music,
 #sponsor{
-    background: #FFC171;
+    background: #FFB52E;
     border-top: 1px solid #000;
 }
 #conference{
@@ -430,9 +455,9 @@ footer .row:last-child::before{
 .overlay{
     width: 100vw;
     height: 100vh;
-    z-index: 8;
+    z-index: 10;
     position: fixed;
-    top: 80px;
+    top: 0;
     left: 0;
     background: rgba(0,0,0,0.5);
     pointer-events: none;
@@ -447,14 +472,14 @@ footer .row:last-child::before{
 }
 .sidebar{
     width: 240px;
-    height: calc(100vh - 80px);
+    height: 100vh;
     position: absolute;
     top: 0;
     right: -240px;
     overflow-y: auto;
-    background: #FD3BDB;
+    background: #333;
     border-top: 1px solid rgba(0,0,0,0.3);
-    padding-top: 15px;
+    padding-top: 60px;
     padding-bottom: 15px;
     transition: all ease-out 0.3s;
     -moz-transition: all ease-out 0.3s;
@@ -466,22 +491,43 @@ footer .row:last-child::before{
 .overlay.show .sidebar{
     right: 0;
 }
-.sidebar a{
+.sidebar a,
+.sidebar span{
     width: 100%;
     float: left;
-    padding: 15px 20px;
+    padding: 5px 20px 9px;
+    font-size: 24px;
+    font-weight: 700;
     color: #fff;
     transition: all ease-out 0.3s;
     -moz-transition: all ease-out 0.3s;
     -webkit-transition: all ease-out 0.3s;
 }
+.sidebar span{
+    color: #E944C5;
+}
 .sidebar a.active{
-    background: #A944E8;
+    background: url(../images/gradient-4.jpg) repeat-y;
     font-weight: 700;
+}
+.sidebar a.sub-menu{
+    padding-left: 50px;
+    font-size: 20px;
 }
 .sidebar a:hover{
     text-decoration: none;
-    background: #A944E8;
+    background: url(../images/gradient-4.jpg) repeat-y;
+}
+.sidebar .close-bt{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+    color: #E944C5;
 }
 
 #collaboration{
@@ -545,8 +591,29 @@ footer .row:last-child::before{
     .section-title h3{
         font-size: 26px;
     }
+
+    #hiring h1,
+    #hiring p,
+    #hiring a{
+        position: relative;
+        z-index: 3;
+    }
     .p1,.p2,.p3{
-        display: none;
+        z-index: 0;
+    }
+    #hiring .p1{
+        left: -20%;
+        top: 70%;
+        width: 150px;
+    }
+    #hiring .p2{
+        width: 200px;
+        left: 59%;
+        top: 65%;
+    }
+    #hiring .p3{
+        left: 65%;
+        width: 300px;
     }
 
     .hero .text h1,
@@ -609,13 +676,6 @@ footer .row:last-child::before{
         padding-right: 10px;
     }
 
-    .overlay{
-        top: 60px;
-        height: calc(100vh - 60px);
-    }
-    .sidebar{
-        height: calc(100vh - 60px);
-    }
     .roadshow-slider .item{
         padding-right: 0;
     }
@@ -626,6 +686,20 @@ footer .row:last-child::before{
     .roadshow-slider .owl-pagination,
     .destination-slider .owl-pagination{
         bottom: -30px;
+    }
+
+    #contact form input{
+        margin-bottom: 10px;
+    }
+    #contact form textarea{
+        height: 120px;
+    }
+
+    .owl-carousel .owl-prev,
+    .owl-carousel .owl-next{
+        width: 40px;
+        height: 40px;
+        top: calc(50% - 20px);
     }
 }
 
