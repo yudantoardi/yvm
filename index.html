@@ -145,7 +145,6 @@
                                 </figure>
                                 <a href="#" class="btn btn-primary color-2">Conference</a>
                             </div>
-                            <div class="item"></div>
                         </div>
                     </div>
                 </div>
@@ -442,7 +441,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <p>Copyright 2022 All Rights Reserved. Your Voice Matters 2022</p>
+                        <p>Copyright 2022 All Rights Reserved.<br>Your Voice Matters 2022</p>
                     </div>
                 </div>
                 <div class="row">
@@ -491,8 +490,9 @@
             });
 
             $(".roadshow-slider").owlCarousel({
-                items: 1.2,
-                itemsMobile: [1024, 1],
+                //items: 1.2,
+                //itemsMobile: [1024, 1],
+                singleItem: true,
                 pagination: true,
                 navigation: true,
                 autoPlay: true

@@ -408,7 +408,7 @@ footer .row:last-child::before{
     content: "";
     width: 100vw;
     position: absolute;
-    left: calc(50% - 1px);
+    left: 50%;
     top: 0;
     height: 80px;
     background: #353535;
