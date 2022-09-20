@@ -616,6 +616,17 @@ footer .row:last-child::before{
     .sidebar{
         height: calc(100vh - 60px);
     }
+    .roadshow-slider .item{
+        padding-right: 0;
+    }
+    .owl-carousel .item figure{
+        margin-bottom: 0;
+    }
+
+    .roadshow-slider .owl-pagination,
+    .destination-slider .owl-pagination{
+        bottom: -30px;
+    }
 }
 
 
