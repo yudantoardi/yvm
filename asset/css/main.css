@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5,h6,
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
-.master{
+body{
     overflow-x: hidden;
 }
 .section-title.font-2 h3,
@@ -249,6 +249,10 @@ a.logo img{
 .owl-carousel .owl-next{
     background: url(../images/arrow-right.png) no-repeat center;
     right: 20px;
+}
+.destination-slider .owl-prev,
+.destination-slider .owl-next{
+    top: calc(60% - 20px);
 }
 
 #collaboration{
@@ -482,6 +486,38 @@ footer .row:last-child::before{
 
 #collaboration{
     padding-bottom: 0;
+}
+
+.owl-pagination{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 30px;
+}
+.owl-pagination .owl-page{
+    display: inline-block;
+    margin: 0 3px;
+}
+.owl-pagination .owl-page span{
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #fff;
+    opacity: 0.5;
+    transition: all ease-out 0.3s;
+}
+.owl-pagination .owl-page.active span{
+    opacity: 1;
+    width: 14px;
+    height: 14px;
+    transform: translateY(3px);
+}
+.roadshow-slider .owl-pagination,
+.destination-slider .owl-pagination{
+    bottom: -20px;
 }
 
 @media only screen and (max-width: 1024px){
