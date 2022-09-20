@@ -252,7 +252,7 @@ a.logo img{
 }
 .destination-slider .owl-prev,
 .destination-slider .owl-next{
-    top: calc(60% - 20px);
+    top: calc(50% + 4px);
 }
 
 #collaboration{
