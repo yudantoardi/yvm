@@ -705,6 +705,9 @@ footer .row:last-child::before{
     #sponsor img{
         margin-bottom: 30px;
     }
+    #sponsor .col-md-6:first-child img{
+        margin-bottom: 0;
+    }
     #sponsor h5{
         margin-bottom: 0;
     }
