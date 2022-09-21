@@ -708,6 +708,9 @@ footer .row:last-child::before{
     #sponsor .col-md-6:first-child img{
         margin-bottom: 0;
     }
+    #sponsor .col-md-6:last-child img{
+        margin-top: -30px;
+    }
     #sponsor h5{
         margin-bottom: 0;
     }
