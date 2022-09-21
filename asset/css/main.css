@@ -701,6 +701,10 @@ footer .row:last-child::before{
         height: 40px;
         top: calc(50% - 20px);
     }
+
+    #sponsor img{
+        margin-bottom: 30px;
+    }
 }
 
 
