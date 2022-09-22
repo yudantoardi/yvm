@@ -421,6 +421,19 @@ a.logo img{
     color: #fff;
 }
 
+#contact form input::-webkit-input-placeholder,
+#contact form textarea::-webkit-input-placeholder{
+    color: #fff;
+}
+#contact form input::-moz-input-placeholder,
+#contact form textarea::-moz-input-placeholder{
+    color: #fff;
+}
+#contact form input::-ms-input-placeholder,
+#contact form textarea::-ms-input-placeholder{
+    color: #fff;
+}
+
 footer{
     background: #FE46BE;
 }
@@ -732,6 +745,9 @@ footer .row:last-child::before{
     }
     .program figure{
         margin-bottom: 10px;
+    }
+    .contact-us-bt{
+        padding: 8px 20px;
     }
 }
 
