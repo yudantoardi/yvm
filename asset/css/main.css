@@ -312,7 +312,7 @@ a.logo img{
 }
 
 #destination{
-    background: url(../images/bg-1.jpg) no-repeat center bottom fixed;
+    background: #FFB52E url(../images/bg-1.jpg) no-repeat center bottom fixed;
     background-size: cover; 
 }
 
@@ -378,7 +378,7 @@ a.logo img{
     border-top: none;
 }
 #speakup{
-    background: url(../images/bg-2.jpg) no-repeat center top fixed;
+    background: #FFB52E url(../images/bg-2.jpg) no-repeat center top fixed;
     background-size: cover;
 }
 
