@@ -566,6 +566,11 @@ footer .row:last-child::before{
     bottom: -20px;
 }
 
+.program .text{
+    width: 100%;
+    float: left;
+}
+
 @media only screen and (max-width: 1024px){
 
     section{
@@ -713,6 +718,20 @@ footer .row:last-child::before{
     }
     #sponsor h5{
         margin-bottom: 0;
+    }
+
+    .program .text{
+        margin-bottom: 30px;
+    }
+    .program .text h5{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .program .text span{
+        font-size: 12px;
+    }
+    .program figure{
+        margin-bottom: 10px;
     }
 }
 
